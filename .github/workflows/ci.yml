@@ -35,10 +35,10 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          IMAGE_NAME=ghcr.io/${{ github.repository_owner }}/ci-cd:latest
+          IMAGE_NAME=ghcr.io/zhang10271111111/ci-cd:latest
           docker build -t "$IMAGE_NAME" .
 
       - name: Push Image
         run: |
-          IMAGE_NAME=ghcr.io/${{ github.repository_owner }}/ci-cd:latest
+          IMAGE_NAME=ghcr.io/zhang10271111111/ci-cd:latest
           docker push "$IMAGE_NAME"
